@@ -116,7 +116,8 @@ describe('TODOMvc App', () => {
       .last()
       .click();
 
-    cy.get('[data-cy="clear-completed-button"]')
+    cy.get('footer')
+      .find('button')
       .click();
 
     cy.get('[data-cy=todos-list]')
